@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-Image-Gallery</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="button-container">
+      <button onclick="showCategory('Jupyter')">Jupyter</button>
+      <button onclick="showCategory('mars')">Mars</button>
+      <button onclick="showCategory('mercury')">Mercury</button>
+      <button onclick="showCategory('neptune')">Neptune</button>
+      <button onclick="showCategory('ploto')">Ploto</button>
+      <button onclick="showCategory('saturn')">Saturn</button>
+    </div>
+
+    <div class="gallery-container">
+      <div class="thumbnail-container" id="Jupyter">
+        <img
+          class="thumbnail"
+          src="./images/juputer1.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/juputer2.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/juputer3.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/juputer4.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/juputer5.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+      </div>
+
+      <!-- Mars Thumbnails -->
+      <div class="thumbnail-container" id="mars" style="display: none">
+        <img
+          class="thumbnail"
+          src="./images/mars1.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars2.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars3.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars4.png"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars5.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars6.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars7.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mars8.png"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+      </div>
+
+      <!-- Mercury -->
+      <div class="thumbnail-container" id="mercury" style="display: none">
+        <img
+          class="thumbnail"
+          src="./images/mercury1.jpeg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury2.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury3.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury4.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury5.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury6.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury7.jpg"
+          alt="Thumbnail 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/mercury8.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+      </div>
+
+      <!-- Neptune -->
+      <div class="thumbnail-container" id="neptune" style="display: none">
+        <img
+          class="thumbnail"
+          src="./images/neptune1.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/neptune2.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/neptune3.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/neptune4.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/neptune5.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+      </div>
+
+      <!-- Ploto  -->
+      <div class="thumbnail-container" id="ploto" style="display: none">
+        <img
+          class="thumbnail"
+          src="./images/ploto1.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto2.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto3.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto4.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto5.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto6.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto7.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/ploto8.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+      </div>
+
+      <!-- Saturn  -->
+      <div class="thumbnail-container" id="saturn" style="display: none">
+        <img
+          class="thumbnail"
+          src="./images/saturn1.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn2.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn3.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn4.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn5.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn6.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn7.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="thumbnail"
+          src="./images/saturn8.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage(this)"
+        />
+      </div>
+    </div>
+
+    <!-- Display the main image that changes -->
+    <div class="main-image">
+      <img id="currentImage" src="./images/juputer1.jpg" alt="Main Image" />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
